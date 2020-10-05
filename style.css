@@ -38,7 +38,7 @@ html {
 
 body {
   margin: 0;
-  font-family: 'AirLand';
+  font-family: 'AirLand',sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 1.5;
@@ -106,7 +106,7 @@ header {
   background-color: #ff7c33;
   /* background-color: #FF6641; */
   width:100%;
-  font-family: 'AirLand';
+  font-family: 'AirLand', sans-serif;
   font-size: 24px;
 }
 
@@ -334,7 +334,7 @@ section.hero {
       justify-content: center;
       margin-left: auto;
       margin-right: auto;
-      font: normal normal  36px 'AirLand';
+      font: normal normal  36px 'AirLand', sans-serif;
       height: 70px;
       background-color:  #0258c3;
       border-top: 2px solid #000;
@@ -1374,7 +1374,7 @@ footer.quote {
 h2 span.flower,
 h2 span.wasteland,
 h2 span.mountain{
-  font-family:'AirLand';
+  font-family:'AirLand', sans-serif;
   font-size: 20px;
   text-transform: uppercase;
 }
