@@ -653,7 +653,7 @@ section.opening-hours {
 }
 
 div.image-opening {
-   background:-webkit-linear-gradient(rgba(242, 242, 242, 1),#ffd7d4, rgba(242, 242, 242, 1));
+  background:-webkit-linear-gradient(rgba(242, 242, 242, 1),#ffd7d4, rgba(242, 242, 242, 1));
   transition: all 0.3s linear;
 }
 
@@ -672,7 +672,7 @@ div.hours-text {
   text-align: center;
   max-width: 200px;
   font-weight: 600;
-  line-height: 1.4;
+  line-height: 1.2;
   padding: 1em;
 }
 
@@ -756,6 +756,7 @@ section.news {
 h3.news{
   font-size: 28px;
   font-weight: 600;
+  line-height: 1.1;
 }
 
 img.computer {
@@ -882,7 +883,11 @@ div.footer-info{
 }
 
 div.footer-text {
-padding: 2em;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  padding: 1em;
+  margin-bottom: 1em;
 }
 
 div.footer-text li {
@@ -1034,7 +1039,6 @@ footer img{
 
   a.brand-logo img{
     transform: translate(-15px , -5px);
-    width:100%;
   }
 
   section.hero {
@@ -1162,7 +1166,6 @@ div.notes {
   column-count: auto;
   width: 100%;
   padding: 0.8em;
-  margin-top: 2em;
   height:100%;
 }
 
@@ -1175,6 +1178,12 @@ a.getaquote {
   position: inherit;
   transform: translateX(-50%);
   left: 50%;
+}
+
+
+input.email{
+  padding:10px;
+  width: auto;
 }
 
 
@@ -1315,6 +1324,7 @@ form {
 input.email{
   margin:1em;
   width:250px;
+  padding: 10px;
 }
 
 input.button {
