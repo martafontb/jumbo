@@ -653,7 +653,7 @@ section.opening-hours {
 }
 
 div.image-opening {
-   background:-webkit-linear-gradient(#ffd7d4, rgba(242, 242, 242, 1));
+   background:-webkit-linear-gradient(rgba(242, 242, 242, 1),#ffd7d4, rgba(242, 242, 242, 1));
   transition: all 0.3s linear;
 }
 
@@ -910,6 +910,10 @@ div.footer-nav li,
    border-radius: 50px;
    padding: 0.3em;
    margin: 2em;
+ }
+
+ marquee {
+   font-size: 35px;
  }
 
 /* workshops page */
@@ -1243,7 +1247,7 @@ div.inks-text{
 }
 
 img.inks{
-width: 160px;
+width: 260px;
 }
 
 .reg-mark {
