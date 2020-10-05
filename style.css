@@ -104,7 +104,7 @@ header {
   left: 0;
 
   background-color: #ff7c33;
-  /* background-color: #FF6641; */
+
   width:100%;
   font-family: 'AirLand', sans-serif;
   font-size: 24px;
@@ -631,7 +631,6 @@ div.text-workshop a {
  div.text-workshop a:hover, .footer-text a:hover   {
   background-color: hsla(111, 100%, 50%, 1);
   color:#000;
-  /* background-color: hsla(54, 100%, 50%, 1); */
 }
 
 
@@ -652,15 +651,6 @@ section.opening-hours {
   grid-template-columns: 1fr 1fr;
 }
 
-div.image-opening {
-  background:-webkit-linear-gradient(rgba(242, 242, 242, 1),#ffd7d4, rgba(242, 242, 242, 1));
-  transition: all 0.3s linear;
-}
-
-img.opening:hover {
-mix-blend-mode: color-burn;
-  filter:hue-rotate(170deg);
-}
 
 div.hours-text {
   display: grid;
@@ -683,7 +673,6 @@ div.hours-text {
 
 
 section.quote {
-  margin-top: 3em;
   padding: 1em;
 }
 
@@ -691,31 +680,25 @@ div.quote{
   display: flex;
   flex-wrap: wrap;
   position: relative;
-  padding-top: 5em;
-  padding-bottom:5em;
+  justify-content: center;
   margin: 0 6% 0 6%;
+  position: relative;
 }
 
 h3.requestingaquote {
   position: relative;
-  top: -15%;
-  left: -3%;
-  z-index: 1;
+  left:-30%;
+  z-index: 2;
   max-width: 30vw;
   transform: rotate(-13deg);
 }
 
 a.getaquote {
-  position: absolute;
-  top: 78%;
-  left: 50%;
-  transform: translate(-50%);
+display: flex;
+justify-content: center;
 }
 
 div.notes {
-    position: relative;
-    left: 50%;
-    transform: translate(-50%);
   	background-color: #ffffff;
     overflow: scroll;
     width: 80%;
@@ -873,7 +856,7 @@ div.footer-info{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-content: center;
+  align-content: flex-end;
 }
 
  div.footer-nav {
@@ -886,8 +869,10 @@ div.footer-text {
   display: flex;
   align-items: flex-end;
   justify-content: space-around;
-  padding: 1em;
-  margin-bottom: 1em;
+}
+
+div.footer-text ul{
+  margin: 0 2em 0 0;
 }
 
 div.footer-text li {
@@ -1047,16 +1032,12 @@ footer img{
   }
 
 section.title h2 {
-  font-size: 22px;
+  font-size: 28px;
   vertical-align: baseline;
-  text-transform: uppercase;
   text-align: center;
   height: fit-content;
+  flex-direction: column;
 }
-
- span.flower.space{
-   display: none;
- }
 
 section.dropdown {
   padding: 20px;
@@ -1153,9 +1134,7 @@ div.hours-text h4, div.hours-text ul {
 }
 
 h3.requestingaquote {
-  margin: 2em 0 2em 0;
   max-width: 53vw;
-  top:-30%;
 }
 
 div.quote {
@@ -1288,8 +1267,8 @@ img.icon {
 
   h3.requestingaquote {
     max-width: 80vw;
-    top:-17%;
-    transform: rotate(-8deg)
+    transform: rotate(-8deg);
+    left:-8%;
   }
 
 
@@ -1303,6 +1282,7 @@ img.icon {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    transform: translate(-50%, 10%);
   }
 
 section.news p{
@@ -1311,7 +1291,6 @@ section.news p{
 
 h3.news {
   margin: 2em 0 1em 0;
-
   font-size: 20px;
   padding:2em 0.5em 0.5em 0.5em;
 }
@@ -1389,14 +1368,9 @@ footer.quote {
   max-width: 100%;
 }
 
-.title h2 {
-  text-transform: uppercase;
-}
-
 h2 span.flower,
 h2 span.wasteland,
 h2 span.mountain{
-  font-family:'AirLand', sans-serif;
   font-size: 32px;
   text-transform: uppercase;
 }
