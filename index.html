@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html id="top">
 	<head>
 		<meta charset="utf-8">
 		<meta name="generator" content="SuperHi">
@@ -8,41 +8,44 @@
 		<title>Jumbo Press Risograph Printer</title>
 		<meta name="description" content="Jumbo Press is a Risograph Printing Service & Artists Editions Barcelona">
 		<meta property="og:title" content="Risograph Printing & Artists Editions Barcelona">
-		<meta property="og:type" content="website">
+		<meta property="og:type" content="Jumbo Press Risograph Printer">
 		<meta property="og:url" content="___CURRENT_URL___">
 		<meta property="og:description" content="Jumbo Press is a Risograph Printing Service & Artists Editions Barcelona">
 		<link rel="stylesheet" href="_base.css">
 		<link rel="stylesheet" href="_fonts.css">
 		<link rel="stylesheet" href="style.css">
+		<link rel="preload" as="audio" href="https://assets.codepen.io/567707/audio-mech.mov">
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
 	</head>
 	<body>
 		<script src="/superhi.js"></script>
+
 		<!-- external js -->
 						<script src="jquery.js" type="text/javascript"></script>
-						<script src="draggabilly.js"></script>
-						<script src="scrollspy.min.js"></script>
 						<script src="gsap.min.js" type="text/javascript"></script>
-		
+
 				<header>
 				  <nav class="navbar-nav">
 					  <div class="nav-wrapper">
 							<a href="index.html" class="brand-logo"><img src="jumbo-logo-yellow.png"/></a>
-					      <ul class="page-menu hide-on-med-and-down" id="nav" >
-					        <li><a class="link link--kukuri" href="#page1" data-letters="FAQ'S">FAQ's</a></li>
-					        <li><a class="link link--kukuri" href="#page2" data-letters="INKS">Inks</a></li>
-					        <li><a class="link link--kukuri" href="#page3" data-letters="WORKSHOP">Workshop</a></li>
-					        <li><a class="link link--kukuri" href="#page4" data-letters="QUOTES">Quotes</a></li>
-					      </ul>
-		
-								<script>
-								$("#nav").scrollspy({ offset: -75 });
-								</script>
-		
+					      <ul class="page-menu hide-on-med-and-down" id="mainNav" >
+					        <li><a class="link" href="#page1" data-id="Faq's">Faq's</a></li>
+					        <li><a class="link" href="#page2" data-id="Inks">Inks</a></li>
+					        <li><a class="link" href="#page3" data-id="Workshop">Workshop</a></li>
+					        <li><a class="link" href="#page4" data-id="Quotes">Quotes</a></li>
+ 									<!-- <div class="selected-bg" style="right: 25.0156px; width: 127.5px;"></div> -->
+							  </ul>
+
+
 								<div class="main-pages hide-on-med-and-down">
-									<a href="#" class="selected-page">PRINT</a>
+									<a href="index.html" class="selected-page">PRINT</a>
 									<a href="https://shop.jumbo-press.com/collections/new-collection">SHOP</a>
 								</div>
-		
+
 								<div id="nav-mobile">
 										<button class="hamburger">
 												<span class="menu"></span>
@@ -55,31 +58,31 @@
 											<div class="nav__content">
 													<div class="nav__left">
 															<div class="nav__links">
-																	<a href="#page1">FAQ's</a>
-																	<a href="#page2">Inks</a>
-																	<a href="#page3">Workshop</a>
-																	<a href="#page4">Quotes</a>
+																<a href="index.html">faq's</a>
+																<a href="index.html">Inks</a>
+																<a href="workshop.html">Workshop</a>
+																<a href="quote.html">Quotes</a>
 																</div>
-																	<div class="main-pages">
-																		<a href="#" class="selected-page">PRINT</a>
-																		<a href="https://shop.jumbo-press.com/collections/new-collection">SHOP</a>
-																	</div>
-		
+																<div class="main-pages nav-small">
+																	<a href="index.html" class="selected-page">PRINT</a>
+																	<a href="https://shop.jumbo-press.com/collections/new-collection">SHOP</a>
+																</div>
 														</div>
 												</div>
 											</nav>
 									</div>
 				  		</nav>
 				</header>
-		
-		
+
+
 				<main>
+
 				  <section class="hero"></section>
-		
-					<section class="title">
-						<h2>Risograph Printing & Artists Editions Barcelona, Spain</h2>
+
+					<section class="title hover-this">
+						<h2>Risograph Printing & Artists Editions <span class="wasteland space">B</span>ARCELONA,<span class="flower space">Spain<span></h2>
 					</section>
-		
+
 		<section class="dropdown" id="page1">
 			<div class="dropdwon-wrapper">
 				    <div class="collapsible red">
@@ -100,8 +103,8 @@
 				        </p>
 				      </div>
 				    </div>
-		
-		
+
+
 						<div class="collapsible blue">
 						 <p>Why Jumbo Press?
 						 	</p>
@@ -111,19 +114,20 @@
 				    <div class="content blue">
 				      <div class="collapsible-text">
 				        <p>
-				          We approach every print project with the outmost care and attention. In a ever changing digital world we strive to support, promote and
-				          collaborate with creatives in printed matter.<br>
-									<br>We are a small but quick and affordable riso business. Being an independent business we can turn print orders over much quicker than
+				          We approach every print project with the outmost care and attention. In an ever changing digital world we strive to support, promote and
+				          collaborate with creatives in printed matter. We are a small but quick and affordable riso business.
+									<br> <br>Being an independent business we can turn print orders over much quicker than
 				          larger businesses and also give the much care and attention needed for good quality
-				          prints. We will also be there every step of the printing process. From the start to the
-				          end of your project, we will keep you up to date on progress and give you tips that we
-				          think could work for your specific project. Not only do we print for as a service but also
-				          collaborate with artists and offer our skills in design/publishing.
+				          prints. Not only do we print for as a service but also collaborate with artists and offer our skills in design/publishing.
+
+									<br>At Jumbo we run a two drum MZ770E risograph printer and hold 9 riso spot colours. Paired with various cutting and binding machines we can help bring your project to life!
+
+
 				        </p>
 				      </div>
 				    </div>
-		
-		
+
+
 						<div class="collapsible pink">
 						 <p>How to print?
 						 </p>
@@ -134,125 +138,115 @@
 				      <div class="box red">
 								<h4>Paper:</h4>
 				        <p>
-				          We typically print all of our projects on 11x17" paper with a maximum printable
-				          area of 10.7x16.5". Of course, we are happy to cut down your project to any size from
-				          there. Our Risograph reliably accepts paper weights between 50# text and 80# cover. We
-				          have a roster of affordable paper we like a lot, but we are happy to try out a new stock.
-				          Some of our favorite papers are milled by French, Mohawk, and Domtar. When looking for
-				          paper, keep in mind Risograph ink primarily dries by absorption, so paper must be
-				          uncoated. The paper that typically performs best is fibrous and with a slight tooth (e.g.
-				          vellum finish).
-				        </p>
+									We are always happy to try new stock at Jumbo and if you have a specific paper in mind we are always happy for you to bring your own stock or we can look at getting it in for you.
+									The machine realiably will take any (uncoated) paper from 80-250gsm.<br><br>
+									We generally like to use high quality recycled papers, some of our go tos are Acroprint Milk, Woodstock, Cyclus Offset and Munken lynx.
+									These papers absorb risograph ink well, while still lending there self to the tactile, vibrant feel of riso. Please get in contact to see what papers we currently have in stock as it varies in stock time to time.
+								</p>
 				      </div>
 				      <div class="box blue">
 								<h4>Files:</h4>
 				        <p>
-				           Please provide high resolution (300-600 dpi) grayscale PDFs - one for each color of
-				          your project. The Riso will convert the gray values to halftones, so no need to do that
-				          ahead of time. If your project is full-bleed, include at least an 1/8 inch bleed area
-				          either embedded in the file or otherwise indicated. For books and booklets, provide your
-				          project in reading order. We are capable of replicating full-color images using a
-				          faux-CMYK process using 3 or 4 inks to reproduce a more complete spectrum of color. We are
-				          happy to help you prepare your files at any stage for printing at an hourly rate.
+									When sending us your artwork please mock it up on an A3 document at 300-600dpi. We would suggest sending us a photoshop file with each color in a separate named layer. Each color turned into grey scale and a layer with a color proof.
+									<br> <br>We also accept jpegs or PDFs in separate grey scale files. Please name the files appropriately and provide a full color proof.
+									<br> <br>If your looking to print a full color image or an image that isn’t separated it is possible to achieve this by using CMYK separation through channels.
+									We can help prepare files at a small fee.
 				        </p>
 				      </div>
 				      <div class="box pink">
 								<h4>Smart design:</h4>
 				        <p>
-				          Given the cantankerous nature of the Risograph, Risograph printing is
-				          inevitably a collaboration between artist, printer, and the machine itself. There is no
-				          such thing as "perfectly perfect" print. The imperfect nature is part of makes Risograph
-				          printing unique among other forms of duplication. That said, an intelligently designed
-				          image can minimize some of the more unpleasant imperfections such a roller marks and
-				          misregistration. Avoid large washes of dense ink coverage, especially down the center, and
-				          include trapping in your separations if you are working with more than two colors.
-				        </p>
+									We would suggest when overlaying colours or using a heavy coverage of ink lowering the opacity of your artwork to a percentage of 75%.
+									This said, line work always looks best if it’s vector and 100% black.
+									<br><br>Try not to make the top part and middle of your print very inky as it can be more susceptible to roller marks. Especially if it’s on the first pass of printing
+									<br><br>We print anything on uncoated papers up to A3 (297 x 420mm) with a maximum printable area of  289 x 409 mm. We also suggest to add a 5mm bleed to all artwork, which is being cut down.
+								</p>
 				      </div>
 				    </div>
 					</div>
 				</div>
 		</section>
-		
-		
+
+
 				<img class="reg-mark" src="Registration_Mark.svg" alt="Registration Mark"/>
 				  <section class="inks" id="page2">
 				    <div class="inks-text">
 				      <h2>
-								<div class="rellax" data-rellax-speed="1">
-				        <img src="inksatjumbo.svg" alt="inks at jumbo"/>
+								<div>
+				        <img src="inksatjumbo.svg" alt="inks at jumbo" class="inks"/>
 								</div>
 				      </h2>
 				      <p>
-				        If you are interested in printing a color that we do not offer, our staff may be able to
-				        recommend a combination of two or more colors to achieve the look you’re going for!<br>
+								Risograph inks are translucent meaning you can overlap 2 inks to make secondary colours.<br><br>
+								If you do not see the color your looking to print
+								please get in touch, we may be able to help achieve it by overlaping 2 or more of these colours.<br>
 				        <br>You can download a swatch of our colors here:
 				      </p>
-				      <button>
-				        <img src="getaswatch.svg" alt="get-swatch" />
+				      <button data-aos="fade-down"  data-aos-duration="500" onclick="playMec()">
+								<a href="Jumbo-Press.jpg" target="blank">
+				        	<img src="getaswatch.svg" alt="get-swatch" />
+								</a>
 				      </button>
 				    </div>
-		
-		
-		
-		<div class="color-selection rellax" data-rellax-speed="-1">
-		
-		  <h3>
-		    Pick a colour!
+
+
+
+		<div class="color-selection">
+<span>At Jumbo we hold 9 risograph spot colours.</span>
+		  <h3 data-aos="fade-in"  data-aos-duration="500">
+		    pick a colour
 		  </h3>
-		
+
 						<div class="colors">
-								<div class="color" style="background-color: #000" data-hex="#000"></div>
+								<div class="color" style="background-color: #000000" data-hex="#000000"></div>
 								<div class="color" style="background-color: #F93B00" data-hex="#F93B00"></div>
 								<div class="color" style="background-color: #01A458" data-hex="#01A458"></div>
 								<div class="color" style="background-color: #0078BF" data-hex="#0078BF"></div>
 								<div class="color" style="background-color: #AC936E" data-hex="#AC936E"></div>
 								<div class="color" style="background-color: #FFE800" data-hex="#FFE800"></div>
-								 <div class="color" style="background-color: #FF7477" data-hex="#FF7477"></div>
-								 <div class="color" style="background-color: #FF48B0" data-hex="#FF48B0"></div>
-								 <div class="color" style="background-color: #5EC8E5" data-hex="#5EC8E5"></div>
-			</div>
-		
-		
+								<div class="color" style="background-color: #FF7477" data-hex="#FF7477"></div>
+								<div class="color" style="background-color: #FF48B0" data-hex="#FF48B0"></div>
+								<div class="color" style="background-color: #5EC8E5" data-hex="#5EC8E5"></div>
+						</div>
+
+						<h5 id="e2" class="hex">#000000</h5>
+
 			<svg class="mickey" id="product-svg" width="376" height="309" viewBox="0 0 376 309" fill="none" xmlns="http://www.w3.org/2000/svg">
 			<path id="product-shape" fill-rule="evenodd" clip-rule="evenodd" d="M88.3627 131.714C81.7928 133.847 74.781 135 67.5 135C30.2208 135 0 104.779 0 67.5C0 30.2208 30.2208 0 67.5 0C104.779 0 135 30.2208 135 67.5C135 76.5343 133.225 85.1541 130.005 93.0297C147.263 83.4636 167.227 78 188.5 78C209.248 78 228.751 83.1975 245.713 92.3295C242.672 84.6443 241 76.2673 241 67.5C241 30.2208 271.221 0 308.5 0C345.779 0 376 30.2208 376 67.5C376 104.779 345.779 135 308.5 135C301.681 135 295.098 133.989 288.892 132.108C300.365 149.893 307 170.941 307 193.5C307 257.289 253.946 309 188.5 309C123.054 309 70 257.289 70 193.5C70 170.774 76.7338 149.582 88.3627 131.714Z" fill="black"/>
 			</svg>
-		
+
+
+
+
 		</div>
 		</section>
 		<img class="reg-mark bottom" src="Registration_Mark.svg" alt="Registration Mark"/>
-		
+
 					<section class="marquee">
-					  <marquee height="70px" loop="infinite" scrollamount="8" width="100%">BLACK - RED - GREEN - BLUE - GOLD - YELLOW - FLUOR ORANGE - FLUOR PINK - AQUA BLUE </marquee>
+					  <marquee height="70px" loop="infinite" scrollamount="5" width="100%">BLACK - RED - GREEN - BLUE - GOLD - YELLOW - FLUOR ORANGE - FLUOR PINK - AQUA BLUE-BLACK - RED - GREEN - BLUE - GOLD - YELLOW - FLUOR ORANGE - FLUOR PINK - AQUA BLUE-BLACK - RED - GREEN - BLUE - GOLD - YELLOW - FLUOR ORANGE - FLUOR PINK - AQUA BLUE</marquee>
 					</section>
-		      
-		<canvas width="1440" height="400"></canvas>
+
+
 				  <section class="workshop" id="page3">
-						
-		
 						<div class="workshop">
-		
 				    <div class="text-workshop">
 				      <p>
-				        Studio visits are fun! <a href="mailto:hey@jumbo-press.com?subject=Hello%20there" class="link link--kukuri" href="#" data-letters="Please get in touch"> Please get in touch.</a> Our studio is located in Carrer de l’Alzina in
-				        Gràcia, Barcelona. We are reliably here from noon until 6pm, Monday through Friday. <br><br>
-				        We also teach an introductory Risograph class that runs once every month or so at our
-				        workshop space. Check out our workshop calendar:
+								If your in the neighbourhood stop by!  We are open Thursday - Saturday 12-7 or <a href="mailto:hey@jumbo-press.com?subject=Hello%20there">by appointment.</a><br>
+								<br>We also run monthly workshops with all the basics on how to print with riso and how to use those little tips/tricks.
+								If you are interested check out our upcoming schedule here:
 				      </p>
 				    </div>
-				    <div class="button">
-				      <a href="workshop.html" class="workshop-button">
+				    <div data-aos="fade-in"  data-aos-duration="500" class="button">
+				      <a href="workshop.html" class="workshop-button" onclick="playMec()">
 								<img class="icon" src="workshop-calendar.svg" alt="workshop calendar"/>
 				      </a>
 				    </div>
 						</div>
 				  </section>
-		
+
 				  <section class="opening-hours">
-				    <div class="container image-opening" id="dropbox">
-							<img class="draggable pic" src="OFFPRINT.png" alt="risograph printer" />
-							<img class="draggable pic" src="BOZO.png" alt="risograph printer" />
-							<img class="draggable pic" src="JUMBOHQ.png" alt="risograph printer" />
-		
+				    <div class="container image-opening">
+							<!-- <img src="OFFPRINT.jpg" alt="jumbo press barcelona shelve" class="opening"/> -->
 				    </div>
 				    <div class="hours-text">
 				      <h2>
@@ -274,7 +268,7 @@
 								<path d="M222.912 26.5412H220.28V20.6769H222.912C225.041 20.6769 226.369 21.6633 226.369 23.5903C226.369 25.5173 225.041 26.5412 222.912 26.5412ZM216.958 37.2001H220.28V29.7543H221.804L226.397 37.2001H230.271L225.429 29.5295C228.195 28.8262 229.748 26.5704 229.748 23.6112C229.748 20.0027 227.174 17.4639 223.324 17.4639H216.958V37.2001Z" fill="white" stroke="black" stroke-width="0.5"/>
 								<path d="M243.061 32.0446C243.061 33.6512 241.345 34.3296 239.686 34.3296C236.752 34.3296 235.089 31.3662 235.089 31.3662L232.584 33.5096C232.584 33.5096 234.823 37.5427 239.669 37.5427C243.322 37.5427 246.42 35.624 246.42 32.0446C246.42 28.4652 243.968 27.1125 240.997 25.9846C238.337 24.969 236.817 24.4321 236.817 22.7132C236.817 21.3896 238.117 20.345 239.78 20.345C242.187 20.345 243.792 22.5717 243.792 22.5717L246.089 20.2617C245.324 19.3036 244.364 18.527 243.274 17.9864C242.184 17.4458 240.992 17.1542 239.78 17.1318C235.877 17.1318 233.438 19.9204 233.438 22.7132C233.438 26.38 236.65 27.9574 239.502 28.9563C241.815 29.7887 243.061 30.3798 243.061 32.0446Z" fill="white" stroke="black" stroke-width="0.5"/>
 								</svg>
-		
+
 				      </h2>
 				      <h4 class="address">
 				        Vila de Gràcia, <br> Carrer de l’Alzina <br> Barcelona, SP
@@ -283,116 +277,141 @@
 								<li>Mon - CLOSED</li>
 								<li>Tue - CLOSED</li>
 								<li>Wed - CLOSED</li>
-								<li>Thu - 11-6</li>
-								<li>Fri - 12-8</li>
-								<li>Sat - 12-8</li>
+								<li>Thu - 12-7PM</li>
+								<li>Fri - 12-7PM</li>
+								<li>Sat - 12-7PM</li>
 								<li>Sun - CLOSED</li>
 				      </ul>
-				      <a href="https://www.google.com/maps/place/Jumbo+Press/@41.4060015,2.1570062,15z/data=!4m5!3m4!1s0x0:0xc1bbcf3ae23fef51!8m2!3d41.4060015!4d2.1570062">
-				        <img src="getdirections.svg" alt="get-directions" />
-				      </a>
+							<div>
+						      <a href="https://www.google.com/maps/place/Jumbo+Press/@41.4060015,2.1570062,15z/data=!4m5!3m4!1s0x0:0xc1bbcf3ae23fef51!8m2!3d41.4060015!4d2.1570062">
+						        <img src="getdirections.svg" alt="get-directions"  />
+						      </a>
+							 </div>
 				    </div>
 				  </section>
-		
+
 				  <section class="quote" id="page4">
-		
+
 						<div class="quote">
 						<h3 class="requestingaquote">
 							<img src="requestingaquote.svg" alt="requesting a quote"/>
 						</h3>
 				  <div class="notes">
 				    <ul>
-				      <li>We will try our best to get back to you within 24 hours, but, it may take longer.</li>
+				      <li>Turn around times vary depending on the project. If you have a specific deadline in mind please let us know and we will do our tip-top best to get it to you on time. </li>
 							<li>
-				        While we have no minimum number of prints, Risograph printing becomes economical in volume.
-				        Making a new master is the most resource intensive part of printing, while subsequent
-				        impressions are relatively cheap.
+				        There is no minimum order at jumbo, but we suggest printing at least 30 copies + as the predominant cost is in the set-up, similar to screen printing.
 				      </li>
 				      <li>
-				        Masters cannot be reused, so making proof prints is difficult. We offer proofs for a fee for
-				        smaller projects, and can proof a single page for larger book projects.
+				        We do not offer Risograph proofs, but we are always happy to share artworks in similar color-ways, which may give you an idea of the final result.
 				      </li>
 				      <li>
-				        If you feel comfortable providing us with a budget, we can help you design the project to
-				        work within your budget.
+				        Please leave us 1-2 days to reply to your quote. Looking forward to collaborate with you!
 				      </li>
 				    </ul>
 				 </div>
+
 					<a class="getaquote" href="quote.html">
-						<img src="getaquote.svg" alt="get-directions" />
+						<img src="getaquote.svg" alt="get-directions" data-aos="fade-in" data-aos-duration="500" />
 					</a>
+
 		</div>
 		</section>
-		
+
 				<section class="news">
 					<img class="computer" src="computer.svg" alt="computer"/>
 				  <h3 class="news">
 				    Find Out What's Happening
 				  </h3>
-				  <p>
-				    Sign up with your email address to receive news and updates!
-				  </p>
 				  <form>
-				    <label for="email">Enter your email:</label>
-				    <input type="email" id="email" name="email" />
-				    <input type="button" onclick="alert('Hello World!')" value="SIGN UP" />
-				  </form>
+						<div id="mc_embed_signup">
+						<form action="https://jumbo-press.us3.list-manage.com/subscribe/post?u=7da14d80405d9213dca1a4942&amp;id=280c140fae" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+						    <div id="mc_embed_signup_scroll">
+							<label for="mce-EMAIL">Sign up with your email to receive news and updates!</label><br>
+							<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+						    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+						    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_7da14d80405d9213dca1a4942_280c140fae" tabindex="-1" value=""></div>
+						    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+						    </div>
+						</form>
+						</div>
+						<!--End mc_embed_signup-->
 				</section>
-		
-		 				<section class="title">
-		          <h2> some examples of our print work </h2>
+
+		 				<section data-aos="fade-up" data-aos-duration="1000" class="title insta">
+		          <h2> s<span class="wasteland">o</span>me e<span class="wasteland">x</span>amples <span class="mountain space">o</span>f o<span class="wasteland">u</span>r print w<span class="mountain">o</span>rk </h2>
 		        </section>
-					<section id="instagram-feed" class="portfolio">    
-						<img src="print1.png" alt="">
-						<img src="print4.png"  alt="">
-						<img src="print3.png" alt="">
-						<img src="print5.png" alt="">
+
+
+					<section id="instagram-feed" class="portfolio">
+					<a href="https://www.instagram.com/jumbopress">	<img src="portfolio1.jpg" alt="Sander Ettema Risograph Publication"> </a>
+					<a href="https://www.instagram.com/jumbopress">	<img src="portfolio2.jpg"  alt="Bad Buzz Simpsons Risograph Print"> </a>
+					<a href="https://www.instagram.com/jumbopress">	<img src="portfolio3.jpg" alt="Lambo Risograph Print"> </a>
+					<a href="https://www.instagram.com/jumbopress">	<img src="portfolio4.jpg" alt="Selection of Risograph Prints"> </a>
 					</section>
+<!-- Slider main container -->
+<div class="swiper-container">
+	<!-- Additional required wrapper -->
+	<div class="swiper-wrapper">
+			<!-- Slides -->
+			<div class="swiper-slide"><img src="portfolio1.jpg" alt="Sander Ettema Risograph Book"></div>
+			<div class="swiper-slide"><img src="portfolio2.jpg" alt="Bad Buzz Simpsons Risograph Print"></div>
+			<div class="swiper-slide"><img src="portfolio3.jpg" alt="Lambo Risograph Print"></div>
+			<div class="swiper-slide"><img src="portfolio4.jpg" alt="Selection of Risograph Prints"></div>
+	</div>
+	<!-- If we need navigation buttons -->
+	<div class="swiper-button-prev"></div>
+	<div class="swiper-button-next"></div>
+
+	<!-- If we need scrollbar -->
+	<div class="swiper-scrollbar"></div>
+</div>
 				</main>
-		
+
 		<footer>
 			<img src="Elephant.svg" alt="elephant-footer"/>
 				<div class="footer-info">
 					<div class="footer-nav">
 						<nav class="menu-footer">
 							<ul>
-							 <li><a href="page1">FAQ's</a></li>
-							 <li><a href="page2">Inks</a></li>
-							 <li><a href="page3">Workshop</a></li>
-							 <li><a href="page4">Quotes</a></li>
+							 <li><a href="#page1">Faq's</a></li>
+							 <li><a href="#page2">Inks</a></li>
+							 <li><a href="#page3">Workshop</a></li>
+							 <li><a href="#page4">Quotes</a></li>
 						 </ul>
 						</nav>
 					</div>
 						<div class="footer-text">
-							<h4>Barcelona</h4>
-										<p>Carrer de l’Alzina, n.2 <br> 08024, Barcelona</p>
-		
-							<h4>Email</h4>
-										<a href="mailto:hey@jumbo-press.com">hey@jumbo-press.com</a>
-		
-							<h4>Social</h4>
-										<ul>
-											<li>FB: /jumbopress</li>
-											<li>IG: @jumbopress</li>
-											<li>Spotify: jumbo_soundz</li>
-										</ul>
+							<ul>
+								<li><p>Carrer de l’Alzina, n.2 <br> 08024, Barcelona</p> </li>
+							</ul>
+							<ul>
+								<li> <a href="mailto:hey@jumbo-press.com">EMAIL</a></li>
+								<li><a href="https://www.instagram.com/jumbopress">INSTAGRAM</a> </li>
+							</ul>
 						</div>
 					</div>
+					<a class="top" href="#top">Jump to top of page</a>
 		</footer>
-		
-		
+
+
+<script type="module" src="https://unpkg.com/rough-notation?module"></script>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 		<!-- my js -->
 				<script src="loading.js" type="text/javascript"></script>
-				<script src="painter.js" type="text/javascript"></script>
-				<script src="rellax.min.js" type="text/javascript"></script>
-				<script>
-					var rellax = new Rellax('.rellax', {
-						center: true
-					});
-					var rellaxNonCentered = new Rellax('.rellax-non-centered', {
-						center: false
-					});
-				</script>
-		
+					<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+					  <script>
+					    AOS.init();
+					</script>
+
+<script>
+var mec = new Audio("https://assets.codepen.io/567707/audio-mech.mov");
+
+function playMec() {
+	mec.play();
+}
+
+</script>
+
 	</body>
 </html>

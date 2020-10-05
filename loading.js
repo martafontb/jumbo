@@ -19,6 +19,7 @@ for (i = 0; i < coll.length; i++) {
 
 // Reference the color shape that was drawn over the image
 const overlay = document.getElementById("product-shape");
+const outputTag = document.querySelector("h5")
 
 // Click on a color
 
@@ -32,6 +33,7 @@ function changeColor(e) {
   let hex = e.target.getAttribute("data-hex");
   // set the hex color
   overlay.style.fill = hex;
+  outputTag.innerHTML = hex;
 }
 
 
@@ -126,66 +128,69 @@ var $win = $(window);
 $win.on('scroll', function(){
   var top = $win.scrollTop();
   $reg.css('transform', 'rotate('+ top +'deg)');
-  console.log('Amazing Scrolling!');
 });
 
 
 
-// draggable random
-$(function() {
-  $('.draggable').draggable()
+
+       $(document).ready(function () {
+           $(document).on("scroll", onScroll);
+
+           //smoothscroll
+           $('a[href^="#"]').on('click', function (e) {
+               e.preventDefault();
+               $(document).off("scroll");
+
+               $('a').each(function () {
+                   $(this).removeClass('selected-bg');
+               })
+               $(this).addClass('selected-bg');
+
+               var target = this.hash,
+                   menu = target;
+               $target = $(target);
+               $('html, body').stop().animate({
+                   'scrollTop': $target.offset().top+2
+               }, 850, 'swing', function () {
+                   window.location.hash = target;
+                   $(document).on("scroll", onScroll);
+               });
+           });
+       });
+
+       function onScroll(event){
+           var scrollPos = $(document).scrollTop();
+           $('#mainNav a').each(function () {
+               var currLink = $(this);
+               var refElement = $(currLink.attr("href"));
+               if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+                   $('#mainNav ul li a').removeClass("selected-bg");
+                   currLink.addClass("selected-bg");
+               }
+               else{
+                   currLink.removeClass("selected-bg");
+               }
+           });
+       }
+
+
+
+
+//swiper
+
+var mySwiper = new Swiper('.swiper-container', {
+// Optional parameters
+direction: 'vertical',
+loop: true,
+
+// Navigation arrows
+navigation: {
+nextEl: '.swiper-button-next',
+prevEl: '.swiper-button-prev',
+},
+
+// And if we need scrollbar
+scrollbar: {
+el: '.swiper-scrollbar',
+},
 })
-
-		function randomFromTo(from, to){
-			return Math.floor(Math.random() * (to - from + 1) + from);
-		}
-  
-		function moveRandom(e) {
-      
-			/* get container position and size
-			 * -- access method : cPos.top and cPos.left */
-			var cPos = $('.container').offset();
-			var cHeight = $('.container').height();
-			var cWidth = $('.container').width();
-			
-			// get box padding (assume all padding have same value)
-			var pad = parseInt($('.container').css('padding-top').replace('px', ''));
-			
-			// get movable box size
-			var bHeight = e.height();
-			var bWidth = e.width();
-			
-			// set maximum position
-			maxY = cPos.top + cHeight - bHeight - pad;
-			maxX = cPos.left + cWidth - bWidth - pad;
-			
-			// set minimum position
-			minY = cPos.top + pad;
-			minX = cPos.left + pad;
-			
-			// set new position			
-			newY = randomFromTo(minY, maxY);
-			newX = randomFromTo(minX, maxX);
-			e.animate({
-				top: newY,
-				left: newX
-				}, 0);
-		}
-
-$('.draggable').each(function(){
-   moveRandom($(this));
-});
-
-
-
-// Select draggable elements
-var draggableElems = document.querySelectorAll('.draggable')
-var draggies = []
-for (var i = 0, len = draggableElems.length; i < len; i++) {
-  var draggableElem = draggableElems[i]
-  var draggie = new Draggabilly(draggableElem, {
-    // contain to parent element
-    containment: true
-  })
-  draggies.push(draggie)
-}

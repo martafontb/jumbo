@@ -12,23 +12,23 @@ const grabData = function (){
   .then(data => {
 	//store the assets somewhere
     const assets = data.includes.Asset
-    
-    //turn our contentful data into something useful 
+
+    //turn our contentful data into something useful
   	//I just want to return items
     //take each individual item and map each item to be just the fields
     return data.items.map( item => {
       let imageUrl = "image1.jpg"
-      
+
       const imageId = item.fields.image.sys.id
-      
+
       const imageData = assets.find(asset => {
         return asset.sys.id == imageId
       })
-      
+
       if (imageData) {
         imageUrl = imageData.fields.file.url
       }
-      
+
       if (imageUrl.startsWith('//')) {
   imageUrl = imageUrl.split('//').join('https://')
 }
@@ -42,11 +42,11 @@ const grabData = function (){
 grabData().then(data =>{
   //do something with the returned data
   console.log(data)
-  
+
   //remove loader
   sectionTag.innerHTML = ""
-  
-  //in the section tag we want to add something 
+
+  //in the section tag we want to add something
   //to the end of each section
   data.forEach(item => {
      sectionTag.innerHTML = sectionTag.innerHTML + `
@@ -57,7 +57,7 @@ grabData().then(data =>{
 <p>${item.date}</p>
 </div>
 <p>${item.description}</p>
-<p></p>
+<p class="signup">${item.signup}</p>
 </div>
 `
   })
