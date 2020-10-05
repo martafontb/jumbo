@@ -319,13 +319,19 @@ section.hero {
   align-items: center;
   flex-direction: column;
   background-attachment: fixed;
-  position: relative;
   background-image: url('000027.JPG');
-  background-size: cover;
+
   background-repeat: no-repeat;
   background-position: center;
-  /* background-color: #FF6641;
-  background-blend-mode: multiply; */
+
+  -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .title h2 {
@@ -647,23 +653,13 @@ section.opening-hours {
 }
 
 div.image-opening {
-  background-image: url(OFFPRINT.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    transition: all 0.3s linear;
-}
-
-div.image-opening:hover {
-  background-color: #FF6641;
-  background-blend-mode: overlay;
-  filter: opacity(0.9);
-  transform: scale(1.03);
+   background:-webkit-linear-gradient(rgba(242, 242, 242, 1),#ffd7d4, rgba(242, 242, 242, 1));
+  transition: all 0.3s linear;
 }
 
 img.opening:hover {
-
-  /* filter:hue-rotate(170deg); */
+mix-blend-mode: color-burn;
+  filter:hue-rotate(170deg);
 }
 
 div.hours-text {
@@ -688,13 +684,12 @@ div.hours-text {
 
 section.quote {
   margin-top: 3em;
-  padding: 2em;
+  padding: 1em;
 }
 
 div.quote{
   display: flex;
   flex-wrap: wrap;
-  /* margin-bottom: 4em; */
   position: relative;
   padding-top: 5em;
   padding-bottom:5em;
@@ -702,7 +697,7 @@ div.quote{
 }
 
 h3.requestingaquote {
-  position: absolute;
+  position: relative;
   top: -15%;
   left: -3%;
   z-index: 1;
@@ -799,6 +794,7 @@ border-color: #000;
 /* instagram-title */
 section.insta h2 {
   text-transform: uppercase;
+  width: 100%;
 }
 
 /* instagram-images */
@@ -914,7 +910,10 @@ div.footer-nav li,
    border-radius: 50px;
    padding: 0.3em;
    margin: 2em;
-   height: 2vh;
+ }
+
+ marquee {
+   font-size: 35px;
  }
 
 /* workshops page */
@@ -1044,15 +1043,16 @@ footer img{
   }
 
 section.title h2 {
-  display: inline-block;
-  font-size: 20px;
-  text-align: center;
+  font-size: 22px;
+  vertical-align: baseline;
   text-transform: uppercase;
+  text-align: center;
+  height: fit-content;
 }
 
-section.hover-this h2{
-  height: 100px;
-}
+ span.flower.space{
+   display: none;
+ }
 
 section.dropdown {
   padding: 20px;
@@ -1161,8 +1161,8 @@ div.quote {
 div.notes {
   column-count: auto;
   width: 100%;
-  padding: 0.5em;
-  margin-top: 1.4em;
+  padding: 0.8em;
+  margin-top: 2em;
   height:100%;
 }
 
@@ -1227,6 +1227,13 @@ footer.workshops {
 
 @media screen and (max-width : 450px) {
 
+section.hero {
+background-size: 175%;
+background-attachment: scroll;
+}
+
+
+
 section.dropdown {
     margin: auto;
   }
@@ -1240,7 +1247,7 @@ div.inks-text{
 }
 
 img.inks{
-width: 300px;
+width: 260px;
 }
 
 .reg-mark {
@@ -1272,7 +1279,8 @@ img.icon {
 
   h3.requestingaquote {
     max-width: 80vw;
-    top:-18%;
+    top:-17%;
+    transform: rotate(-8deg)
   }
 
 
@@ -1322,6 +1330,11 @@ div.swiper-container {
     height: 300px;
 }
 
+section.insta h2 {
+    font-size: 32px;
+    display: block;
+}
+
 #instagram-feed{
 display:none;
 }
@@ -1367,7 +1380,6 @@ footer.quote {
 }
 
 .title h2 {
-
   text-transform: uppercase;
 }
 
@@ -1375,7 +1387,7 @@ h2 span.flower,
 h2 span.wasteland,
 h2 span.mountain{
   font-family:'AirLand', sans-serif;
-  font-size: 20px;
+  font-size: 32px;
   text-transform: uppercase;
 }
 

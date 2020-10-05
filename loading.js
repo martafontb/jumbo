@@ -14,7 +14,6 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 
-
 // colour picker
 
 // Reference the color shape that was drawn over the image
