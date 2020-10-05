@@ -797,7 +797,6 @@ section.insta h2 {
   text-transform: uppercase;
   display: block;
   width: 100%;
-  max-width: 70%;
 }
 
 /* instagram-images */
@@ -1328,6 +1327,10 @@ div.swiper-container {
   display: inline-block;
     width: 100%;
     height: 300px;
+}
+
+section.insta h2 {
+    max-width: 80%;
 }
 
 #instagram-feed{
