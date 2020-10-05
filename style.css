@@ -795,7 +795,6 @@ border-color: #000;
 /* instagram-title */
 section.insta h2 {
   text-transform: uppercase;
-  display: block;
   width: 100%;
 }
 
@@ -1331,6 +1330,7 @@ div.swiper-container {
 
 section.insta h2 {
     max-width: 80%;
+    display: block;
 }
 
 #instagram-feed{
