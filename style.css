@@ -1227,6 +1227,16 @@ footer.workshops {
 
 @media screen and (max-width : 450px) {
 
+section.hero {
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+div.image-opening {
+  background-size: fill;
+}
+
 section.dropdown {
     margin: auto;
   }
