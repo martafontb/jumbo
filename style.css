@@ -1,25 +1,3 @@
-@font-face {
-  font-family: 'AirLand';
-  src: url('GlyphWorld/GlyphWorld-AirLand.otf');
-}
-
-@font-face {
-  font-family: 'Flower';
-  src: url('GlyphWorld/GlyphWorld-Flower.otf');
-}
-
-@font-face {
-  font-family: 'Wasteland';
-  src: url('GlyphWorld/GlyphWorld-WasteLand.otf');
-}
-
-@font-face {
-  font-family: 'Mountain';
-  src: url('GlyphWorld/GlyphWorld-Mountain.otf');
-}
-
-
-
 ::selection {
   /* background-color: #FF6641; */
   background-color: #ff7c33;
@@ -860,7 +838,7 @@ div.footer-info{
 }
 
  div.footer-nav {
-  padding: 2em;
+  padding: 3em 3em 0 0em;
   flex: 0 1 100px;
   text-transform: uppercase;
 }
@@ -996,6 +974,10 @@ footer.quote {
   padding: 60px;
   color:#fff;
   max-width: 100%;
+}
+
+footer.quote a {
+  color:#fff;
 }
 
 /* MEDIA QUERIS */
