@@ -1,25 +1,3 @@
-@font-face {
-  font-family: 'AirLand';
-  src: url('GlyphWorld/GlyphWorld-AirLand.otf');
-}
-
-@font-face {
-  font-family: 'Flower';
-  src: url('GlyphWorld/GlyphWorld-Flower.otf');
-}
-
-@font-face {
-  font-family: 'Wasteland';
-  src: url('GlyphWorld/GlyphWorld-WasteLand.otf');
-}
-
-@font-face {
-  font-family: 'Mountain';
-  src: url('GlyphWorld/GlyphWorld-Mountain.otf');
-}
-
-
-
 ::selection {
   /* background-color: #FF6641; */
   background-color: #ff7c33;
@@ -104,7 +82,7 @@ header {
   left: 0;
 
   background-color: #ff7c33;
-  /* background-color: #FF6641; */
+
   width:100%;
   font-family: 'AirLand', sans-serif;
   font-size: 24px;
@@ -319,13 +297,19 @@ section.hero {
   align-items: center;
   flex-direction: column;
   background-attachment: fixed;
-  position: relative;
   background-image: url('000027.JPG');
-  background-size: cover;
+
   background-repeat: no-repeat;
   background-position: center;
-  /* background-color: #FF6641;
-  background-blend-mode: multiply; */
+
+  -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .title h2 {
@@ -625,7 +609,6 @@ div.text-workshop a {
  div.text-workshop a:hover, .footer-text a:hover   {
   background-color: hsla(111, 100%, 50%, 1);
   color:#000;
-  /* background-color: hsla(54, 100%, 50%, 1); */
 }
 
 
@@ -646,25 +629,6 @@ section.opening-hours {
   grid-template-columns: 1fr 1fr;
 }
 
-div.image-opening {
-  background-image: url(OFFPRINT.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    transition: all 0.3s linear;
-}
-
-div.image-opening:hover {
-  background-color: #FF6641;
-  background-blend-mode: overlay;
-  filter: opacity(0.9);
-  transform: scale(1.03);
-}
-
-img.opening:hover {
-
-  /* filter:hue-rotate(170deg); */
-}
 
 div.hours-text {
   display: grid;
@@ -676,7 +640,7 @@ div.hours-text {
   text-align: center;
   max-width: 200px;
   font-weight: 600;
-  line-height: 1.4;
+  line-height: 1.2;
   padding: 1em;
 }
 
@@ -687,40 +651,32 @@ div.hours-text {
 
 
 section.quote {
-  margin-top: 3em;
-  padding: 2em;
+  padding: 1em;
 }
 
 div.quote{
   display: flex;
   flex-wrap: wrap;
-  /* margin-bottom: 4em; */
   position: relative;
-  padding-top: 5em;
-  padding-bottom:5em;
+  justify-content: center;
   margin: 0 6% 0 6%;
+  position: relative;
 }
 
 h3.requestingaquote {
-  position: absolute;
-  top: -15%;
-  left: -3%;
-  z-index: 1;
+  position: relative;
+  left:-30%;
+  z-index: 2;
   max-width: 30vw;
   transform: rotate(-13deg);
 }
 
 a.getaquote {
-  position: absolute;
-  top: 78%;
-  left: 50%;
-  transform: translate(-50%);
+display: flex;
+justify-content: center;
 }
 
 div.notes {
-    position: relative;
-    left: 50%;
-    transform: translate(-50%);
   	background-color: #ffffff;
     overflow: scroll;
     width: 80%;
@@ -761,6 +717,7 @@ section.news {
 h3.news{
   font-size: 28px;
   font-weight: 600;
+  line-height: 1.1;
 }
 
 img.computer {
@@ -799,6 +756,7 @@ border-color: #000;
 /* instagram-title */
 section.insta h2 {
   text-transform: uppercase;
+  width: 100%;
 }
 
 /* instagram-images */
@@ -876,17 +834,23 @@ div.footer-info{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-content: center;
+  align-content: flex-end;
 }
 
  div.footer-nav {
-  padding: 2em;
+  padding: 3em 3em 0 0em;
   flex: 0 1 100px;
   text-transform: uppercase;
 }
 
 div.footer-text {
-padding: 2em;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+}
+
+div.footer-text ul{
+  margin: 0 2em 0 0;
 }
 
 div.footer-text li {
@@ -914,7 +878,10 @@ div.footer-nav li,
    border-radius: 50px;
    padding: 0.3em;
    margin: 2em;
-   height: 2vh;
+ }
+
+ marquee {
+   font-size: 35px;
  }
 
 /* workshops page */
@@ -1009,8 +976,9 @@ footer.quote {
   max-width: 100%;
 }
 
-
-
+footer.quote a {
+  color:#fff;
+}
 
 /* MEDIA QUERIS */
 
@@ -1035,7 +1003,6 @@ footer img{
 
   a.brand-logo img{
     transform: translate(-15px , -5px);
-    width:100%;
   }
 
   section.hero {
@@ -1044,14 +1011,11 @@ footer img{
   }
 
 section.title h2 {
-  display: inline-block;
-  font-size: 20px;
+  font-size: 28px;
+  vertical-align: baseline;
   text-align: center;
-  text-transform: uppercase;
-}
-
-section.hover-this h2{
-  height: 100px;
+  height: fit-content;
+  flex-direction: column;
 }
 
 section.dropdown {
@@ -1149,9 +1113,7 @@ div.hours-text h4, div.hours-text ul {
 }
 
 h3.requestingaquote {
-  margin: 2em 0 2em 0;
   max-width: 53vw;
-  top:-30%;
 }
 
 div.quote {
@@ -1161,8 +1123,7 @@ div.quote {
 div.notes {
   column-count: auto;
   width: 100%;
-  padding: 0.5em;
-  margin-top: 1.4em;
+  padding: 0.8em;
   height:100%;
 }
 
@@ -1175,6 +1136,12 @@ a.getaquote {
   position: inherit;
   transform: translateX(-50%);
   left: 50%;
+}
+
+
+input.email{
+  padding:10px;
+  width: auto;
 }
 
 
@@ -1227,6 +1194,13 @@ footer.workshops {
 
 @media screen and (max-width : 450px) {
 
+section.hero {
+background-size: 175%;
+background-attachment: scroll;
+}
+
+
+
 section.dropdown {
     margin: auto;
   }
@@ -1240,7 +1214,7 @@ div.inks-text{
 }
 
 img.inks{
-width: 300px;
+width: 260px;
 }
 
 .reg-mark {
@@ -1272,7 +1246,8 @@ img.icon {
 
   h3.requestingaquote {
     max-width: 80vw;
-    top:-18%;
+    transform: rotate(-8deg);
+    left:-8%;
   }
 
 
@@ -1286,6 +1261,7 @@ img.icon {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    transform: translate(-50%, 10%);
   }
 
 section.news p{
@@ -1294,7 +1270,6 @@ section.news p{
 
 h3.news {
   margin: 2em 0 1em 0;
-
   font-size: 20px;
   padding:2em 0.5em 0.5em 0.5em;
 }
@@ -1307,6 +1282,7 @@ form {
 input.email{
   margin:1em;
   width:250px;
+  padding: 10px;
 }
 
 input.button {
@@ -1320,6 +1296,11 @@ div.swiper-container {
   display: inline-block;
     width: 100%;
     height: 300px;
+}
+
+section.insta h2 {
+    font-size: 32px;
+    display: block;
 }
 
 #instagram-feed{
@@ -1366,16 +1347,10 @@ footer.quote {
   max-width: 100%;
 }
 
-.title h2 {
-
-  text-transform: uppercase;
-}
-
 h2 span.flower,
 h2 span.wasteland,
 h2 span.mountain{
-  font-family:'AirLand', sans-serif;
-  font-size: 20px;
+  font-size: 32px;
   text-transform: uppercase;
 }
 

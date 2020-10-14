@@ -14,7 +14,6 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 
-
 // colour picker
 
 // Reference the color shape that was drawn over the image
@@ -150,7 +149,7 @@ $win.on('scroll', function(){
                    menu = target;
                $target = $(target);
                $('html, body').stop().animate({
-                   'scrollTop': $target.offset().top+2
+                   'scrollTop': $target.offset().top - 2
                }, 850, 'swing', function () {
                    window.location.hash = target;
                    $(document).on("scroll", onScroll);
