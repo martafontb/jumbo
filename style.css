@@ -1013,7 +1013,8 @@ footer img{
   }
 
 section.title h2 {
-  font-size: 28px;
+  font-size: 24px;
+  padding: 0.5em;
   vertical-align: baseline;
   text-align: center;
   height: fit-content;
