@@ -1182,7 +1182,7 @@ section.grid{
   border:none;
 }
 
-footer.main {
+footer.main-footer {
   background-image: none;
   transform: translateX(-10%);
 }
@@ -1314,7 +1314,7 @@ section.insta h2 {
 display:none;
 }
 
-footer.main img {
+footer.main-footer img {
   display: none;
 }
 
