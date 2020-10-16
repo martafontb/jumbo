@@ -1182,7 +1182,7 @@ section.grid{
   border:none;
 }
 
-footer {
+footer.main {
   background-image: none;
   transform: translateX(-10%);
 }
