@@ -1257,6 +1257,9 @@ img.icon {
     left:-8%;
   }
 
+  a.getaquote {
+transform: translateX(-60%);
+  }
 
   img.computer{
     width: 100%;
