@@ -213,3 +213,34 @@ scrollbar: {
 el: '.swiper-scrollbar',
 },
 })
+
+//random colors
+let colors = ["#ff7c33", "#0258c3"];
+let randomColor = (colors) => {
+  let rndNum = Math.floor(Math.random() * 3);
+  let rndColor = colors[rndNum];
+  return rndColor;
+}
+
+
+document.querySelectorAll(".whee").forEach(item => {
+      let txt = item.innerHTML;
+      let html = "";
+      for (let i = 0; i < txt.length; i++){
+        let rndColor = randomColor(colors);
+        html += "<span style=color:" + rndColor + ">" + txt.charAt(i) + "</span>";
+      }
+      item.innerHTML = html; //set the html to each letter
+});
+
+let colorTextChange = () => {
+    let text = document.getElementsByClassName("whee")[0].childNodes;
+    text.forEach(letter => {
+        letter.style.color = randomColor(colors);
+    });
+
+}
+
+setInterval(function(){
+  colorTextChange();
+}, 700);
