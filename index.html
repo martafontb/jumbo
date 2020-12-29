@@ -6,11 +6,30 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Jumbo Press Risograph Printer</title>
-		<meta name="description" content="Jumbo Press is a Risograph Printing Service & Artists Editions Barcelona">
-		<meta property="og:title" content="Risograph Printing & Artists Editions Barcelona">
-		<meta property="og:type" content="Jumbo Press Risograph Printer">
-		<meta property="og:url" content="___CURRENT_URL___">
-		<meta property="og:description" content="Jumbo Press is a Risograph Printing Service & Artists Editions Barcelona">
+
+		<!-- HTML Meta Tags -->
+<title>Risograph Printing & Artists Editions Barcelona</title>
+<meta name="description" content="Jumbo Press is a Risograph Printing Service & Artists Editions Barcelona">
+
+<!-- Google / Search Engine Tags -->
+<meta itemprop="name" content="Risograph Printing & Artists Editions Barcelona">
+<meta itemprop="description" content="Jumbo Press is a Risograph Printing Service & Artists Editions Barcelona">
+<meta itemprop="image" content="https://www.pinterest.co.uk/pin/860539441283444185/">
+
+<!-- Facebook Meta Tags -->
+<meta property="og:url" content="https://jumbo-press.com">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Risograph Printing & Artists Editions Barcelona">
+<meta property="og:description" content="Jumbo Press is a Risograph Printing Service & Artists Editions Barcelona">
+<meta property="og:image" content="https://www.pinterest.co.uk/pin/860539441283444185/">
+
+<!-- Twitter Meta Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Risograph Printing & Artists Editions Barcelona">
+<meta name="twitter:description" content="Jumbo Press is a Risograph Printing Service & Artists Editions Barcelona">
+<meta name="twitter:image" content="https://www.pinterest.co.uk/pin/860539441283444185/">
+
+
 		<link rel="stylesheet" href="_base.css">
 		<link rel="stylesheet" href="_fonts.css">
 		<link rel="stylesheet" href="style.css">
@@ -27,11 +46,12 @@
 		<!-- external js -->
 						<script src="jquery.js" type="text/javascript"></script>
 						<script src="gsap.min.js" type="text/javascript"></script>
+						<script src="lazysizes.min.js" type="text/javascript"></script>
 
 				<header>
 				  <nav class="navbar-nav">
 					  <div class="nav-wrapper">
-							<a href="index.html" class="brand-logo"><img src="jumbo-logo-yellow.png"/></a>
+							<a href="index.html" class="brand-logo"><img data-src="jumbo-logo-yellow.png" class="lazyload"/></a>
 					      <ul class="page-menu hide-on-med-and-down" id="mainNav" >
 					        <li><a class="link" href="#page1" data-id="Faq's">Faq's</a></li>
 					        <li><a class="link" href="#page2" data-id="Inks">Inks</a></li>
@@ -76,7 +96,7 @@
 
 				<main>
 
-				  <section class="hero"></section>
+				  <section class="hero lazyload"></section>
 
 					<section class="title top-section">
 						<h2>Risograph Printing & Artists Editions Barcelona, <span class="flower space">Spain<span></h2>
@@ -164,12 +184,12 @@
 		</section>
 
 
-				<img class="reg-mark" src="Registration_Mark.svg" alt="Registration Mark" loading="lazy"/>
+				<img class="reg-mark lazyload" data-src="Registration_Mark.svg" alt="Registration Mark" loading="lazy"/>
 				  <section class="inks" id="page2">
 				    <div class="inks-text">
 				      <h2>
 								<div>
-				        <img src="inksatjumbo.svg" alt="inks at jumbo" class="inks" loading="lazy"/>
+				        <img data-src="inksatjumbo.svg" alt="inks at jumbo" class="inks lazyload" loading="lazy"/>
 								</div>
 				      </h2>
 				      <p>
@@ -180,7 +200,7 @@
 				      </p>
 				      <button data-aos="fade-down"  data-aos-duration="500" onclick="playMec()">
 								<a href="Jumbo-Press.jpg" target="blank">
-				        	<img src="getaswatch.svg" alt="get-swatch" loading="lazy" />
+				        	<img data-src="getaswatch.svg" alt="get-swatch" class="lazyload" loading="lazy" />
 								</a>
 				      </button>
 				    </div>
@@ -233,7 +253,7 @@
 				    </div>
 				    <div data-aos="fade-in"  data-aos-duration="500" class="button">
 				      <a href="workshop.html" class="workshop-button" onclick="playMec()">
-								<img class="icon" src="workshop-calendar.svg" alt="workshop calendar" loading="lazy"/>
+								<img class="icon lazyload" data-src="workshop-calendar.svg" alt="workshop calendar" loading="lazy"/>
 				      </a>
 				    </div>
 						</div>
@@ -241,7 +261,7 @@
 
 				  <section class="opening-hours">
 				    <div class="container image-opening">
-							<img src="studio-store.png" alt="jumbo press barcelona shelve" class="opening animate" loading="lazy"/>
+							<img data-src="studio-store.png" alt="jumbo press barcelona shelve" class="opening lazyload" loading="lazy"/>
 				    </div>
 				    <div class="hours-text">
 				      <h2>
@@ -279,7 +299,7 @@
 				      </ul>
 							<div class="get-directions">
 						      <a href="https://www.google.com/maps/place/Jumbo+Press/@41.4060015,2.1570062,15z/data=!4m5!3m4!1s0x0:0xc1bbcf3ae23fef51!8m2!3d41.4060015!4d2.1570062">
-						        <img src="getdirections.svg" alt="get-directions" loading="lazy" />
+						        <img data-src="getdirections.svg" alt="get-directions" loading="lazy" class="lazyload"/>
 						      </a>
 							 </div>
 				    </div>
@@ -289,7 +309,7 @@
 
 						<div class="quote">
 						<h3 class="requestingaquote">
-							<img src="requestingaquote.svg" alt="requesting a quote" loading="lazy"/>
+							<img data-src="requestingaquote.svg" alt="requesting a quote" loading="lazy" class="lazyload"/>
 						</h3>
 				  <div class="notes">
 				    <ul>
@@ -314,7 +334,7 @@
 		</section>
 
 				<section class="news">
-					<img class="computer animate" src="computer.svg" alt="computer" loading="lazy"/>
+					<img class="computer lazyload" data-src="computer.svg" alt="computer" loading="lazy"/>
 				  <h3 class="news whee">
 				    Find Out What's Happening
 				  </h3>
@@ -339,10 +359,10 @@
 
 
 					<section id="instagram-feed" class="portfolio">
-					<a href="https://www.instagram.com/jumbopress">	<img src="portfolio1.jpg" alt="Sander Ettema Risograph Publication"> </a>
-					<a href="https://www.instagram.com/jumbopress">	<img src="portfolio2.jpg"  alt="Bad Buzz Simpsons Risograph Print"> </a>
-					<a href="https://www.instagram.com/jumbopress">	<img src="portfolio3.jpg" alt="Lambo Risograph Print"> </a>
-					<a href="https://www.instagram.com/jumbopress">	<img src="portfolio4.jpg" alt="Selection of Risograph Prints"> </a>
+					<a href="https://www.instagram.com/jumbopress">	<img data-src="portfolio1.jpg" alt="Sander Ettema Risograph Publication" class="lazyload"> </a>
+					<a href="https://www.instagram.com/jumbopress">	<img data-src="portfolio2.jpg"  alt="Bad Buzz Simpsons Risograph Print" class="lazyload"> </a>
+					<a href="https://www.instagram.com/jumbopress">	<img data-src="portfolio3.jpg" alt="Lambo Risograph Print" class="lazyload"> </a>
+					<a href="https://www.instagram.com/jumbopress">	<img data-src="portfolio4.jpg" alt="Selection of Risograph Prints" class="lazyload"> </a>
 					</section>
 <!-- Slider main container -->
 <div class="swiper-container">
@@ -387,8 +407,6 @@
 
 		</footer>
 
-
-<script type="module" src="https://unpkg.com/rough-notation?module"></script>
 	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 		<!-- my js -->
 				<script src="loading.js" type="text/javascript"></script>

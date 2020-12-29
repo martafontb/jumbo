@@ -67,9 +67,36 @@ p {
   font-weight: 400;
 }
 
-img.animate {
-  filter: grayscale(0) brightness(1);
-}
+
+.loading:before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  margin-top: -16px;
+  margin-left: -16px;
+  width: 32px;
+  height: 32px;
+  border-radius: 32px;
+  animation: scaleout 1.2s infinite ease-in-out;
+
+  // Tweak as needed
+  mix-blend-mode: soft-light;
+  background-color: rgba(0, 0, 0, .9); }
+
+.lazyload,
+.lazyloading {
+  opacity: 0; }
+
+.loading,
+.lazyload,
+.lazyloaded,
+.image {
+  opacity: 1;
+  transition: 2s cubic-bezier(0.215, 0.61, 0.355, 1); }
+
+
 
 /* header */
 
@@ -296,7 +323,7 @@ section.hero {
   align-items: center;
   flex-direction: column;
   background-attachment: fixed;
-  background-image: url('000027.JPG');
+  background-image: url('bubblegumvol2.png');
 
   background-repeat: no-repeat;
   background-position: center;
