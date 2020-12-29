@@ -394,7 +394,7 @@ section.dropdown {
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .collapsible p{
   transition: transform 0.3s ease;
-  padding: 1em .5em;
+  padding: 1em 1em;
 
 }
 .collapsible p:hover {
