@@ -88,9 +88,10 @@ p {
   border-radius: 32px;
   animation: scaleout 1.2s infinite ease-in-out;
 
-  // Tweak as needed
+ 
   mix-blend-mode: soft-light;
-  background-color: rgba(0, 0, 0, .9); }
+  background-color: rgba(0, 0, 0, .9); 
+}
 
 .lazyload,
 .lazyloading {
@@ -650,7 +651,7 @@ div.text-workshop a {
    color:#000;
  }
 
- div.text-workshop a:hover, .footer-text a:hover,
+ div.text-workshop a:hover, .footer-text a:hover
  {
   background-color: hsla(111, 100%, 50%, 1);
   color:#000;
