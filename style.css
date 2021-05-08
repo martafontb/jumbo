@@ -22,7 +22,9 @@ html {
 
 body {
   margin: 0;
-  font-family: 'AirLand',sans-serif;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 800;
+  /* font-family: 'AirLand',sans-serif; */
   font-size: 18px;
   font-weight: 400;
   line-height: 1.5;
@@ -119,7 +121,7 @@ header {
   background-color: #ff7c33;
 
   width:100%;
-  font-family: 'AirLand', sans-serif;
+  /* font-family: 'AirLand', sans-serif; */
   font-size: 24px;
 }
 
@@ -352,7 +354,8 @@ section.hero {
       justify-content: center;
       margin-left: auto;
       margin-right: auto;
-      font: normal normal  2.4vw 'AirLand', sans-serif;
+      font-size: 36px;
+      /* font: normal normal  2.4vw 'AirLand', sans-serif; */
       height: 5.4vw;
       background-color:  #0258c3;
       border-top: 2px solid #000;
@@ -361,6 +364,7 @@ section.hero {
       color: #fff;
 }
 
+  
 
 
 
@@ -419,7 +423,7 @@ section.dropdown {
 }
 .pink {
 
-  background-color: rgba(221,235,255);
+  background-color: #45BC44;
 }
 
 
@@ -589,7 +593,7 @@ div.color-selection h3 {
 /* marquee */
 
 .marquee {
-    font: normal italic 400 40px 'AirLand', sans-serif;
+    font: normal italic 400 40px 'Nunito', sans-serif;
     height: 70px;
     padding-top: 0.3em;
     border-top: 2px solid #000;
@@ -653,7 +657,7 @@ div.text-workshop a {
 
  div.text-workshop a:hover, .footer-text a:hover
  {
-  background-color: hsla(111, 100%, 50%, 1);
+  background-color: #45BC44;
   color:#000;
 }
 
@@ -781,6 +785,7 @@ form {
 }
 
 input.email{
+  padding: 10px;
   width: 30%;
   height: 50px;
   margin:1em;
@@ -910,6 +915,7 @@ div.footer-text li {
 
 div.footer-text li a {
   padding: 0.5em;
+  margin: 0.3em;
   border: 1px solid #000;
   border-radius: 50px;
 }
@@ -927,7 +933,7 @@ div.footer-text li a {
    background-color: #000;
    color:#fff;
    border-radius: 50px;
-   padding: 0.4em;
+   padding: 0.6em;
    display: flex;
    justify-content: center;
  }
@@ -1064,7 +1070,7 @@ footer img{
   }
 
 section.title h2 {
-  font-size: 24px;
+  font-size: 36px;
   padding: 0.5em;
   vertical-align: baseline;
   text-align: center;
