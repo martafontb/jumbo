@@ -186,22 +186,22 @@ $win.on('scroll', function(){
 
 //swiper
 
-var mySwiper = new Swiper('.swiper-container', {
-// Optional parameters
-direction: 'vertical',
-loop: true,
+// var mySwiper = new Swiper('.swiper-container', {
+// // Optional parameters
+// direction: 'vertical',
+// loop: true,
 
-// Navigation arrows
-navigation: {
-nextEl: '.swiper-button-next',
-prevEl: '.swiper-button-prev',
-},
+// // Navigation arrows
+// navigation: {
+// nextEl: '.swiper-button-next',
+// prevEl: '.swiper-button-prev',
+// },
 
-// And if we need scrollbar
-scrollbar: {
-el: '.swiper-scrollbar',
-},
-})
+// // And if we need scrollbar
+// scrollbar: {
+// el: '.swiper-scrollbar',
+// },
+// })
 
 //random colors
 let colors = ["#ff7c33", "#0258c3"];
