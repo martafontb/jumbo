@@ -22,7 +22,7 @@ html {
 
 body {
   margin: 0;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Epilogue', sans-serif;
   font-weight: 800;
   font-size: 24px;
   font-weight: 400;
@@ -581,7 +581,7 @@ div.color-selection h3 {
 /* marquee */
 
 .marquee {
-    font: normal italic 400 40px 'Nunito', sans-serif;
+    font: normal italic 400 40px 'Epilogue', sans-serif;
     height: 70px;
     padding-top: 0.3em;
     border-top: 2px solid #000;
