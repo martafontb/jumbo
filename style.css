@@ -349,7 +349,7 @@ section.hero {
       margin-left: auto;
       margin-right: auto;
       font-size: 36px;
-      /* font: normal normal  2.4vw 'AirLand', sans-serif; */
+      font-weight: 400;
       height: 5.4vw;
       background-color:  #0258c3;
       border-top: 2px solid #000;
@@ -358,6 +358,9 @@ section.hero {
       color: #fff;
 }
 
+.top-section h2 {
+  font-weight: 600;
+}
   
 
 
@@ -707,6 +710,7 @@ div.quote{
 
 h3.requestingaquote {
   font-size: 36px;
+  text-transform: uppercase;
   display: flex;
   justify-content: flex-start;
 }
@@ -909,11 +913,12 @@ div.footer-text li a {
   margin: 0.3em;
   border: 1px solid #000;
   border-radius: 50px;
+  font-size:16px;
 }
 
 .menu-footer li,
 .menu-footer a {
-    transition: all 0.3s ease;
+    transition: all 0.2s ease;
 }
 
  .footer-nav li:hover {
