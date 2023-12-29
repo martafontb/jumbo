@@ -178,6 +178,13 @@ main h2{
   display: none;
 }
 
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  z-index: 10;
+}
+
 
 /* Media Query for Mobile Devices */
 @media screen and (max-width: 912px) {
