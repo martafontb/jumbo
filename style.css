@@ -201,7 +201,7 @@ header a{
     font-size: 16px;
   }
   img.logo{
-    max-width: 310px;
+    max-width: 75%;
   }
   /* Stack main content vertically */
   main {
