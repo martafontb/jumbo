@@ -1,12 +1,10 @@
-::selection {
+::selection, ::-moz-selection {
   background-color: #ff7c33;
+
 }
 
-::-moz-selection {
-  background-color: salmon;
-}
-
-:root{
+:root {
+  min-height: 100%;
   height: 100%;
 }
 
@@ -42,7 +40,7 @@ a {
   text-decoration: none;
   color: #000;
   cursor: pointer;
-  transition: background-color ease .5s;
+  transition: color 0.3s ease, background-color 0.3s ease;
   font-style: italic;
   font-family: 'Archivo Black', sans-serif;
 }
@@ -50,6 +48,9 @@ a {
 a:hover {
   background-color: #ff7c33;
   color: #fff;
+}
+a:focus {
+  outline: 2px solid #ff7c33; /* Add a focus ring for accessibility */
 }
 
 h1, h2, h3 {
@@ -109,6 +110,12 @@ main div{
   border-radius: 4px;
 }
 
+main > div.blurred {
+  filter: blur(2px);
+  transition: filter 0.3s ease;
+}
+
+
 main .colors{
   gap: 4px;
   display: grid;
@@ -136,6 +143,9 @@ footer ul{
   grid-gap: 32px;
 }
 
+footer ul li {
+  cursor: default;
+}
 
 
 .color {
@@ -167,7 +177,7 @@ footer ul{
 .illu{
   position: absolute;
   max-width: 333px;
-  top: 32px;
+  top: 64px;
   right: 32px;
 }
 

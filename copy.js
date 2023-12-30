@@ -22,3 +22,20 @@ function copyToClipboard(text) {
         console.error('Error in copying text: ', err);
     });
 }
+
+
+
+document.querySelectorAll('footer ul li').forEach(item => {
+    item.addEventListener('mouseenter', () => {
+        const className = item.getAttribute('class');
+        document.querySelectorAll(`main > div:not(.${className})`).forEach(div => {
+            div.classList.add('blurred');
+        });
+    });
+
+    item.addEventListener('mouseleave', () => {
+        document.querySelectorAll('main > div').forEach(div => {
+            div.classList.remove('blurred');
+        });
+    });
+});
